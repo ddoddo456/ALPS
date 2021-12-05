@@ -1,0 +1,358 @@
+@charset "UTF-8"; /*@charset "euc-kr"; */
+
+/************************************************************************
+ * 최적화       : html5
+ * 서비스       : alps
+ * 최초작성일   : 210319
+ * 작성자       : 박노성
+************************************************************************/
+@media all and (min-width:0px) and (max-width:1149px){
+    
+    ul.ib.six{ width: calc(100% + 20px); margin: 0 -10px;}
+    ul.ib.six li { width: calc(33.33% - 20px); margin: 0 10px; margin-bottom: 20px;}
+    ul.ib.four li { width: calc(50% - 20px); margin: 0 10px; margin-bottom: 20px;}
+    
+    .container{ width: calc(100% - 40px);}
+    
+    .header {padding: 0;}
+    .header .bi img{ margin-top:10px; width: 200px;}
+    .header.fixed{ padding: 0;}
+    .header.fixed .bi img{ width:200px;}
+    .header ul.nav{right: -20px;}
+    .header ul.nav * {font-size: 15px;}
+    .header ul.nav li {margin: 0 5px;}
+    .header ul.nav li a { height: 15px;}
+    .header ul.wather_info {display: none;}
+    
+    #reservation.view ul.ib.six li{ margin-top: 0; margin-bottom: 20px; opacity: 1;}
+        
+    .events .container, 
+    .events .container div * {text-align: center;}
+    .events .container div h4,
+    .events .container div a.btn {margin-top: 20px; margin-left: auto; margin-right: auto;}
+    .events .container img{ width: 250px;  margin: -40px 0 -20px;}
+    .events .container div{ width: 100%; padding: 40px 0 0; }
+    .events .container div h2:after { left: 50%; margin-left: -15px;}
+    
+    #slope { margin: 160px 0 0;}
+    #slope .slope_con .container { top: 40px;}
+    #slope .slope_con .container h2:after { left: 0; margin-left: 0;}
+    #slope .slope_con .container h3.disc { margin-top: 40px;}
+    #slope .slope_con .container .route_con div.list span { font-size: 12px;}
+    #slope .slope_con .bg img {width: 150%; padding-top: 5%;}
+    #slope .slope_con #info { top: 450px; right: auto; left: 20px; margin-right: 0; padding: 20px; width: 340px; height: 325px;}
+    #slope .slope_con #info:after { top: 20px; right: 20px;}
+    #slope .slope_con #info .title { left: 70px;}
+    #slope .slope_con #info div.disc { top: 100px; font-size: 10px;}
+    #slope .slope_con #info .difficulty { top: 70px;}
+    #slope .slope_con #info .table ul { bottom: -10px; width: 300px;}
+    #slope .slope_con #info .table ul li { margin-bottom: 5px; font-size: 11px;}
+    #slope .slope_con #info .table ul li.line { margin-bottom: 20px;}   
+    #slope .slope_con #info .table ul.info_r li {right: 70px;}
+    #slope .slope_con #info .table ul li i{right: -20px;}
+    #slope a.btn.btn_red { position: absolute; right: 0; top: 0;}
+    #stay .container .list_con { width: calc(100% + 20px); margin: 0 -10px;}
+    #stay .container .list_con .list{ margin: 0 10px;}
+    #stay .container .list_con .list div {font-size: 25px; line-height: 22px;} 
+    #stay .container .list_con .list span.disc {font-size: 11px;}
+    #slope .instructor_con ul li a span{ font-size: 25px;}
+    #slope .instructor_con { margin: 200px 0 80px;}
+    #slope .instructor_con ul{margin: 60px -10px 0; width: calc(100% + 20px);}
+    #slope .instructor_con ul li{ margin: 0 10px 20px; width: calc(50% - 20px);}
+    #slope .safety_con .container .bg { background: url(../img/bg_safety.jpg) 55% center no-repeat; background-size: cover;} 
+    #slope .safety_con .container ul {   left: 10%;}
+    
+    #contact ul.ib.four li:nth-child(2n-1):before { background: none;}
+    #contact ul.ib.four li:before { left: -10px;}
+    .gotop.on a{top: -60px;}
+    
+}
+@media all and (min-width:0px) and (max-width:800px){ 
+    
+    ::-webkit-scrollbar-thumb:vertical{height:0px;}
+    ::-webkit-scrollbar-thumb:horizontal{width:0px;}
+    ::-webkit-scrollbar{width:0; height:0;}  
+    
+    h2{ margin-bottom: 15px; font-size: 23px;}
+    h2:after{ bottom: -7px; left: 50%; width: 26px; height: 2px; margin-left: -13px;}
+    h3 { margin-bottom: 5px; font-size: 12px;}
+    h4 { font-size: 10px;}
+    
+    
+    .btn_nav{display: block; position: absolute; right: -20px; top: 5px; width: 28px; height: 32px; padding: 3px 20px 5px 6px; border-radius: 10px 0 0 10px; cursor: pointer; z-index: 9999; transition: right 0.35s ease-in-out, background 0.35s 0.35s;}
+    body.open_nav .btn_nav { background: #c80000; right: 230px; transition: right 0.35s ease-in-out;}
+    .btn_nav:before,
+    .btn_nav:after{position:absolute; content: ''; width: 10px; height:10px; right: 0; opacity: 0; transition: right 0.35s ease-in-out, opacity 0.35s 0.35s;}
+    .btn_nav:before{ top: -10px; background-image: radial-gradient(circle at 0% 0%, transparent 9.9px, #c80000 10px); }
+    .btn_nav:after{ bottom: -10px; background-image: radial-gradient(circle at 0% 100%, transparent 9.9px, #c80000 10px);}
+    body.open_nav .btn_nav:before,
+    body.open_nav .btn_nav:after{ right: 0; opacity: 1; transition: right 0.35s ease-in-out;}
+    .btn_nav i{position:absolute; height: 32px; font-size: 32px; line-height: 37px; transition: all 0.35s linear, opacity 0.35s 0.35s, color 0.35s 0.35s;}
+    .btn_nav .fa-bars{ opacity: 1; }
+    .btn_nav .fa-angle-right{opacity: 0; margin: 0 0 0 10px;}
+    body.open_nav .btn_nav i{ transition: all 0.35s linear;}
+    body.open_nav .btn_nav .fa-bars{ opacity: 0; }
+    body.open_nav .btn_nav .fa-angle-right{ color:#fff; opacity: 1; }
+    
+    .header{ height: 50px;}
+    .header.fixed {backdrop-filter: none; background: none;}
+    .header .header_blur {position:absolute; top:0; left:0; width:100%; height: 50px; opacity: 0; background: rgba(255, 255, 255, 0.85); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); transition: all 0.35s ease-in-out;}
+    .header.fixed .header_blur { opacity: 1;}
+    .header .bi img,
+    .header.fixed .bi img{ width:150px;}
+    .header ul.nav{ position:fixed; top:0; right:-250px; width:250px; height:100%; border-radius:0 0 0 10px; background: url(../img/btn_bi_nav.png) 0 bottom no-repeat #c80000; background-size: 250px; z-index: 9999; transition: right 0.35s ease-in-out;}
+    body.open_nav .header ul.nav{right: 0;}
+    .header ul.nav li{ display: block; float: none; margin: 30px 40px; opacity: 0; transition: all 0.35s ease-out;}
+    .header ul.nav li:first-child{ margin: 80px 40px 30px;}
+    body.open_nav .header ul.nav li{  margin: 30px 15px; opacity: 1;}
+    body.open_nav .header ul.nav li:first-child{ margin: 80px 15px 30px;}
+    body.open_nav .header ul.nav li:nth-child(1){ transition-delay: 0.2s;}
+    body.open_nav .header ul.nav li:nth-child(2){ transition-delay: 0.35s;}
+    body.open_nav .header ul.nav li:nth-child(3){ transition-delay: 0.5s;}
+    body.open_nav .header ul.nav li:nth-child(4){ transition-delay: 0.65s;}
+    body.open_nav .header ul.nav li:nth-child(5){ transition-delay: 0.8s;}
+    
+    
+    
+    .header ul.nav li a{ color: #fff; font-size:21px;}
+    
+    
+    .header ul.wather_info { position: fixed; display: block; top:7px; right:-250px; z-index: 99999; transition: right 0.35s ease-in-out;}
+    body.open_nav .header ul.wather_info {display: block; right:25px; }
+    
+    .body_blur {position:fixed; top:0; right: -100%; width:100%; height: 100%; opacity: 0; background: rgba(255, 255, 255, 0.35); -webkit-backdrop-filter: saturate(0.5) blur(2px); backdrop-filter: saturate(0.5) blur(2px); z-index: 9; transition: opacity 0.35s ease-in-out, right 0s 0.35s;}
+    body.open_nav .body_blur {right: 0; opacity: 1; transition: opacity 0.35s ease-in-out;}
+    
+    .bg_cloud { height: 100px; margin: -50px 0; background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);}
+    #visual { height: 40vh !important; transform: scale(1); transition: height 2s ease-in-out;}  
+    body.load #visual { height: 85vh !important; }    
+    #visual:hover {}
+    /*   
+    */
+    #visual .bg_layer{margin-top: 0 !important; filter: blur(0) !important;}
+    #visual .bg_layer div.white_wall {opacity: 0 !important;} 
+    #visual .bg_02 div.text { margin-top: -60px; font-size: 50px; color: #c80000; letter-spacing: 34px; text-indent: 30px; background: none; -webkit-background-clip: border-box;}
+    #visual .bg_04 div.text { margin-top: -10px; font-size: 15px; letter-spacing: 5.3px; text-indent: 0;}
+    
+    #reservation{ padding: 80px 0 !important; margin-top: -160px; opacity: 1 !important; pointer-events: auto !important; }
+    #reservation ul.ib.six li{ margin-top: 0; margin-bottom: 20px; opacity: 1;}
+    body.load #reservation ul.ib.six li{ margin-top: 20px; opacity: 0;}
+    #reservation ul.ib.six li:nth-child(1){transition: all 0.15s linear, margin 0.5s ease-out 2s, opacity 0.5s linear 2s}
+    #reservation ul.ib.six li:nth-child(2){transition: all 0.15s linear, margin 0.5s ease-out 2.1s, opacity 0.5s linear 2.1s}
+    #reservation ul.ib.six li:nth-child(3){transition: all 0.15s linear, margin 0.5s ease-out 2.15s, opacity 0.5s linear 2.15s}
+    #reservation ul.ib.six li:nth-child(4){transition: all 0.15s linear, margin 0.5s ease-out 2.2s, opacity 0.5s linear 2.2s}
+    #reservation ul.ib.six li:nth-child(5){transition: all 0.15s linear, margin 0.5s ease-out 2.25s, opacity 0.5s linear 2.25s}
+    #reservation ul.ib.six li:nth-child(6){transition: all 0.15s linear, margin 0.5s ease-out 2.3s, opacity 0.5s linear 2.3s}
+    
+    #reservation h2 { text-align: left; font-size: 14px; line-height: 14px;}
+    #reservation h2:after{ bottom:-7px; width: 20px; height: 2px;}
+    
+    #reservation h3 { font-size: 10px;}
+    #reservation h4 { font-size: 7px;}
+    #reservation ul.ib.six li { padding: 25px 0 20px; height: 55px; font-size: 12px; line-height: 12px;}
+    #reservation ul.ib.six li div { font-size: 36px; margin-bottom: 5px;}
+    #reservation ul.ib.six li span { font-size: 8px;}
+    
+    
+    body.load .events {margin: 10px 0 80px; opacity: 0;}
+    .events {margin: 0 0 80px; opacity: 1; transition: all 0.5s linear 2.5s;}
+    .events .container div h2:after { bottom: -9px;}
+    .events .container div h4{ margin-top: 20px;}
+    .events .container div a.btn { margin-top: 40px;}
+    
+    #slope{padding: 0; margin: 0;}
+    #slope .slope_con { margin-top: -15px;}
+    #slope .slope_con .container { position: relative; top: auto; left: auto; margin: -430px auto 0; transform: translateX(0);}
+    #slope .slope_con .container * { text-align: center; }
+    #slope .slope_con .container h2:after { left: 50%; margin-left: -13px;}
+    #slope .slope_con .container h3.disc {  margin-top: 380px; }
+    #slope .slope_con .container .route_con { margin: 20px 0 0 -10px; width: calc(100% + 20px);}
+    #slope .slope_con .container .route_con div.list span { /* font-size: 12px;*/ }
+    #slope .slope_con .container .route_con div.list i:after{ bottom: 5px;}
+    
+    
+    #slope .slope_con .bg img { position: relative; left: 50% !important; width: 800px !important; margin-left: -352px !important; padding-top: 110px;}
+    #slope .slope_con #info {position: relative; top: auto; left: 0; width: 100%; box-shadow: none; background: none; backdrop-filter: none; }
+    #slope .slope_con #info .difficulty,
+    #slope .slope_con #info div.disc,
+    #slope .slope_con #info .table {position: relative; top: auto; bottom: auto; width: 100%; margin-top:20px;}
+    #slope .slope_con #info .difficulty{ height: 15px; margin-top: 50px;}
+    #slope .slope_con #info div.disc { height: 48px;}
+    #slope .slope_con #info .table ul {position: relative; top: 0; bottom: auto; width: 100%; }
+    #slope .slope_con #info .table ul.info_r{position: absolute; top: 23px;}
+    #slope .slope_con #info .table ul.info_r li { right: 30px;}
+    #slope a.btn.btn_red { position: relative; right: auto; top: auto; margin: 0 auto;}
+    
+    #slope .instructor_con { margin: 80px 0;}
+    #slope .instructor_con h3{padding-top: 10px;}
+    #slope .instructor_con ul{margin: 40px -10px 0; width: calc(100% + 20px);}    
+    #slope .instructor_con ul li a span{ bottom: 10px; left: 10px; line-height: 10px; font-size: 11px; }
+    #slope .instructor_con ul li a i { font-size: 11px; bottom: 10px !important; right: 10px; opacity: 1; line-height: 1em;}
+    
+    #slope .safety_con { margin: 80px 0;}
+    #slope .safety_con .container .bg { margin-top: 40px; height: 340px; background: url(../img/bg_safety.jpg) 60% center no-repeat; background-size: cover;}    
+    #slope .safety_con .container ul {top:40px; left: 7.5%;}
+    #slope .safety_con .container ul li { margin-bottom: 35px;}
+    #slope .safety_con .container ul li i { margin-right: 10px; width: 45px; font-size: 36px;}
+    #slope .safety_con .container ul li div b { margin-bottom: 5px; font-size: 12px;}
+    #slope .safety_con .container ul li div { font-size: 9px;}
+    #stay{ height: 280px;  margin: 0; background-attachment: scroll;}
+    #stay:after {opacity: 0.85; background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 65%);}
+    #stay .container .title { padding: 0;}
+    #stay .container .list_con { top: 100px; }
+    #stay .container .list_con .list:before {background-size: 100% 100% !important; }
+    #stay .container .list_con .list:hover img{filter: none;}
+    #stay .container .list_con .list div{ padding:0 10px; bottom: 23px !important; font-size: 11px; line-height: 10px;}
+    #stay .container .list_con .list span.disc {display: none;}
+    #stay .container .list_con .list a.go { padding:0 10px; bottom:10px !important; font-size: 9px; opacity: 1;}
+    #stay .container .list_con .list a.go i{right:10px; margin-top : 0;}
+    
+    .slick-slider .slick-prev,
+    .slick-slider:ver .slick-next { opacity: 1 !important;}
+    
+    #contact { padding: 33px 0 40px; margin-top: 7px;}
+    #contact .map_con { height: 500px;}
+    #contact .map_con iframe{ height: 700px; top: -100px;}
+    #contact .map_con a i.fa-google { top: 17px;}
+    #contact ul.ib.four { padding: 40px 0 20px;}
+    #contact ul.ib.four li { height: 90px; }
+    #contact ul.ib.four li i { font-size: 36px;}
+    #contact ul.ib.four li div { padding: 5px 0; font-size: 12px; }
+    #contact ul.ib.four li > span {font-size: 9px;}
+    #contact ul.ib.four li span span{ display: none; bottom: -30px !important; width: 180px; margin-left: -90px; color: #aaa; font-size: 8px; opacity: 1; }
+    
+    #contact .input_con {padding: 40px 0;}
+    
+    #footer{ padding: 40px 0 80px; font-size: 10px; line-height: 1.25em;}
+    #footer .bi { margin-bottom: 20px;}
+    #footer .bi img{ width: 100px;}
+    #footer .sns{ padding-bottom: 20px; border-bottom: 1px solid rgba(0, 0, 0, 0.25);}
+    #footer .copy{ padding-top: 20px;}
+    #footer .copy img{ margin: 0 auto 20px;}
+    #footer .copy div { font-weight: 500; font-size:9px; line-height: 1em;}
+    #footer .copy div b{ font-weight: 600;}
+    
+    .gotop a{ margin-right: 10px; height: 50px; width: 50px; line-height: 52px; border-radius: 15px;}
+    .gotop.on a{top:-80px;}
+    
+}
+
+@media all and (min-width:1150px) and (max-width:1440px){
+    
+    ul.ib.six{ width: calc(100% + 20px); margin:0 -10px;}
+    ul.ib.four li { width: calc(16.66% - 20px); margin:0 10px;}
+    ul.ib.six li { width: calc(16.66% - 20px); margin:0 10px;}
+    
+    .container{ width: calc(100% - 40px); }
+    
+    .header {padding: 10px 0;}
+    .header .bi img{ margin-top:10px; width: 200px;}    
+    .header.fixed .bi img{ width:200px;}
+    .header ul.nav * {font-size: 15px;}
+    .header ul.nav li {margin: 0 5px;}
+    .header ul.nav li a { height: 15px;}
+    
+    .events .container img{ width: 33.33%; }
+    .events .container div{ width: 66.66%; padding: 40px 0 40px 44px; }
+    
+    #slope .slope_con .container { top: 80px;}
+    #slope .slope_con .container .route_con div.list span { font-size: 12px;}
+    #slope .slope_con #info { top: 80px; right: 20px; margin-right: 0; padding: 20px; width: 400px; height: 370px;}
+    #slope .slope_con #info:after { top: 20px; right: 20px;}
+    #slope .slope_con #info .title { left: 70px;}
+    #slope .slope_con #info div.disc { top: 100px; font-size: 12px;}
+    #slope .slope_con #info .difficulty { top: 70px;}
+    #slope .slope_con #info .table ul { bottom: -10px;}
+    #slope .slope_con #info .table ul li { margin-bottom: 10px;}
+    #slope .slope_con #info .table ul li.line { margin-bottom: 20px;}   
+    #slope .slope_con #info .table ul.info_r li {right: 70px;}
+    #slope .instructor_con ul{margin: 80px -10px 0; width: calc(100% + 20px);}
+    #slope .instructor_con ul li{ margin: 20px 10px 0; width: calc(25% - 20px);}
+    #slope .safety_con .container ul {   left: 10%;}
+    
+    #stay .container .list_con { width: calc(100% + 20px); margin: 0 -10px;}
+    #stay .container .list_con .list{ margin: 0 10px;}
+    
+    #contact ul.ib.four li:before { left: -10px;}
+}
+
+@media all and (min-width:1650px){    
+    
+    a.btn.btn_red{ max-width: 230px;}
+    
+    ul.ib.six{ width: calc(100% + 44px); margin: 0 -22px;}
+    ul.ib.six li,
+    ul.ib.four li{ width: 230px; margin: 0 22px;}
+    
+    .container{ width:1600px; }
+    
+    .header ul.nav { right: 255px;}
+    .header ul.nav *{ font-size: 19px; }
+    .header ul.nav li a{ padding: 2px 10px; }
+    .header ul.wather_info { width:230px;}    
+    .header ul.wather_info li.temps *{ margin-right: 35px;}  
+    
+    .events .container img{ width: 504px; }
+    .events .container div{ width: 1096px; padding: 80px 0 80px 181px; }
+    
+    #slope .slope_con .container { top: 160px;}
+    #slope .slope_con .container h3.disc{ font-size: 18px;}
+    #slope .slope_con .container .route_con{ width: 411px; margin: 20px -11px 0;}
+    #slope .slope_con .container .route_con div.list{  width: 115px; margin: 0 11px;}
+    #slope .slope_con .container .route_con div.list[data-no="r_01"] img{ background: url(../img/bg_route_01.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list[data-no="r_02"] img{ background: url(../img/bg_route_02.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list[data-no="r_03"] img{ background: url(../img/bg_route_03.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list[data-no="r_04"] img{ background: url(../img/bg_route_04.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list[data-no="r_05"] img{ background: url(../img/bg_route_05.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list[data-no="r_06"] img{ background: url(../img/bg_route_06.png) 50% center no-repeat; background-size: 160%;}
+    #slope .slope_con .container .route_con div.list i.class{width: 75px; } 
+    #slope .slope_con .container .route_con div.list i.class:after{ bottom: 1px; left: -22px;  font-size: 13px;}
+    #slope .slope_con .container .route_con div.list i.gnc:after{ }
+    #slope .slope_con .container .route_con div.list i.bsq:after{ left: -21px;}
+    #slope .slope_con .container .route_con div.list i.bdm:after{ left: -20px; bottom: 6px;}
+    #slope .slope_con .container .route_con div.list i.dbd{ left: 35px; }
+    #slope .slope_con .container .route_con div.list i.dbd:after{ left: -27px; bottom: 6px;}
+    
+    #slope .slope_con #info{ top: 160px; margin-right: -800px; width: 504px; height: 575px;}
+    #slope .slope_con #info .title{ left: 110px; font-size: 28px; }
+    #slope .slope_con #info .title div{left: -75px; margin-top: 2px;}
+    #slope .slope_con #info .title b{ font-size: 72px; }
+    #slope .slope_con #info .difficulty { top: 120px; font-size: 18px;}
+    #slope .slope_con #info .difficulty b{ margin-left: 10px;}  
+    
+    #slope .slope_con #info div.disc{ top: 175px; font-size: 16px; }
+    #slope .slope_con #info div.disc b{}  
+
+    #slope .slope_con #info .table{ bottom: 20px; width: 100%;}
+    #slope .slope_con #info .table ul{ width: 425px; bottom: 0;}
+    #slope .slope_con #info .table ul li{  margin-bottom: 20px; font-size: 16px; }
+    #slope .slope_con #info .table ul li.line{ height: 3px; }
+
+    #slope .slope_con #info .table ul.info_r{ right: 5px;}
+    #slope .slope_con #info .table ul.info_r li{ right: 120px; }
+    #slope .slope_con #info .table ul li i{ right: -10px; width: 50px; font-size: 12px; line-height: 16px;}
+    
+    #slope .instructor_con ul{ width: calc(100% + 44px); margin: 80px -22px 0; }
+    #slope .instructor_con ul li{ margin: 0 22px; width: 367px;}
+    
+    
+    #slope .safety_con .container .bg{ height: 580px;}
+    #slope .safety_con .container ul{ top: 80px; left: 274px;}
+    #slope .safety_con .container ul li{margin-bottom: 40px; }
+    #slope .safety_con .container ul li i{ margin-right: 44px; width: 94px; font-size: 44px;}
+    #slope .safety_con .container ul li div{ font-size: 18px;}
+    #slope .safety_con .container ul li div b{ margin-bottom: 10px; font-size: 22px; }
+    
+    #stay .container .list_con { width: 1233px; margin:0 -22px;}
+    #stay .container .list_con .list{ width: 367px; margin: 0 22px; }    
+    #stay .container .list_con .list:hover div{ bottom: 160px;}
+    #stay .container .list_con .list:hover span.disc{ bottom: 80px; }
+    
+    #contact .map_con a{ width: 150px; padding: 15px 0 15px 80px; margin: 0 0 -130px -115px;}    
+    #contact .map_con a i.fa-google { left: 30px; }
+    #contact ul.ib.four li:before { left: -22px;}
+    
+    #contact .input_con label{ max-width: 504px;}
+       
+    #footer .bi img{ width: 230px; }
+}

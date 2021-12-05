@@ -1,0 +1,14 @@
+@charset "UTF-8"; /*@charset "euc-kr"; */
+
+.guide_line{position: fixed; top:0; left:50%; width: 1440px; height:100%; margin-left:-720px; z-index: 999; pointer-events: none; display: none;}
+.guide_line.on{display: block;}
+.guide_line *{}
+.guide_line span{position: fixed;}
+.guide_line span:nth-child(1){top: 0; left:50%; height: 100%; margin-left: -1px; border-left:1px solid #f00; border-right:1px solid #f00;}
+.guide_line span:nth-child(2){top: 50%; left:0; width: 100%; margin-top: -1px; border-top:1px solid #f00; border-bottom:1px solid #f00;}
+.guide_line div{width: 80px; height: 100%; display: inline-block; margin: 0 20px; box-sizing: border-box; border-left:1px solid #f00; border-right:1px solid #f00; background: rgba(255, 0, 0, 0.15);}
+
+@media all and (min-width:1650px){
+    .guide_line{width: 1644px;  margin-left:-822px; }
+    .guide_line div{width: 93px; margin:0 22px;}
+}
